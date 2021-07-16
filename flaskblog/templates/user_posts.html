@@ -1,6 +1,7 @@
 {% extends "layout.html" %}
 {% block content %}
     <h1 class="mb-3">Posts by {{ user.username }} | {{ posts.total }}</h1>
+    {%if posts.items%}
     {% for post in posts.items %}
         <article class="media content-section">
           <img class="rounded-circle article-img" src="{{ url_for('static', filename='profile_pics/' + post.author.image_file) }}">
@@ -14,6 +15,14 @@
           </div>
         </article>
     {% endfor %}
+    {%else%}
+    <article class="media content-section">
+      <div class="media-body text-center">
+        <h4 class="mb-3"><b>You have not posted anything as of now! Click the button below to make one.</b></h4>
+        <a class="btn btn-outline-danger mb-3" href="{{ url_for('posts.new_post') }}">Create your first Post</a>
+      </div>
+    </article>
+    {%endif%}
     {% for page_num in posts.iter_pages(left_edge=1, right_edge=1, left_current=1, right_current=2) %}
       {% if page_num %}
         {% if posts.page == page_num %}
