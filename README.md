@@ -110,12 +110,12 @@ Users can do the following:
 ## Run
 
 To run this application
-- You need to install [Technology](#technology) items using pip install -r requirements.txt
+- You need to install [Technology](#technology) items using <b>pip install -r requirements.txt</b>
 - Set your SECRET_KEY
 - Set your EMAIL_USER
 - Set your EMAIL_PASS
 - Set your Database
-- Run <b>python python run.py</b> on your terminal 
+- Run <b>python run.py</b> on your terminal 
 
 ## License
 
