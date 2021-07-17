@@ -23,7 +23,10 @@
 
 ## Demo
 
-
+![miniBlog](https://user-images.githubusercontent.com/56071565/126047495-955b6165-64b5-4f09-9f1c-cfdc5bd8e8dd.png)
+![post](https://user-images.githubusercontent.com/56071565/126047492-39aca6c2-d369-4af6-a31b-40ee3668a873.png)
+![newpost](https://user-images.githubusercontent.com/56071565/126047494-06f9e8c0-c5d7-4a97-841a-a27b4d88523d.png)
+![account](https://user-images.githubusercontent.com/56071565/126047493-63801250-2ee5-43e6-98a2-1908936d6024.png)
 
 The application is deployed on Heroku and can be accessed through the following link:
 
