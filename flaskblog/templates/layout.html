@@ -18,9 +18,9 @@
 </head>
 <body>
     <header class="site-header">
-      <nav class="navbar navbar-expand-md navbar-dark fixed-top" style="background-color: rgb(161, 100, 20);">
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top" style="background-color: rgb(255, 145, 0);">
         <div class="container">
-          <a class="navbar-brand mr-4" href="/">mini<b>B</b>log</a>
+          <a class="navbar-brand mr-4" style="color: rgb(0, 0, 0);" href="/">mini<b>B</b>log</a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -67,6 +67,7 @@
                 <li class="list-group-item list-group-item-light"><a href="/">Latest Posts</a></li>
                 <li class="list-group-item list-group-item-light"><a class="mr-2" href="{{ url_for('users.user_posts', username=current_user.username) }}">Your Posts</a></li>
                 <li class="list-group-item list-group-item-light"><a href="{{ url_for('users.account') }}">Edit Profile</a></li>
+                <li class="list-group-item list-group-item-light"><a href="{{ url_for('posts.new_post') }}">Create a Post</a></li>
               </ul>
             </p>
             {% else %}

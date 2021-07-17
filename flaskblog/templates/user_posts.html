@@ -1,6 +1,6 @@
 {% extends "layout.html" %}
 {% block content %}
-    <h1 class="mb-3">Posts by {{ user.username }} | {{ posts.total }}</h1>
+    <h1 class="mb-3 text-center">Posts by {{ user.username }} ({{ posts.total }})</h1>
     {%if posts.items%}
     {% for post in posts.items %}
         <article class="media content-section">
@@ -19,7 +19,7 @@
     <article class="media content-section">
       <div class="media-body text-center">
         <h4 class="mb-3"><b>You have not posted anything yet! Click the button below to make one.</b></h4>
-        <a class="btn btn-outline-danger mb-3" href="{{ url_for('posts.new_post') }}">Create your first Post</a>
+        <a class="btn btn-outline-danger mb-3" href="{{ url_for('posts.new_post') }}">Create your first Post +</a>
       </div>
     </article>
     {%endif%}
