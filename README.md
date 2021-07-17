@@ -30,7 +30,7 @@
 
 The application is deployed on Heroku and can be accessed through the following link:
 
-[miniBlog on Heroku](https://miniblogflasker.herokuapp.com/)
+- [miniBlog on Heroku](https://miniblogflasker.herokuapp.com/)
 
 The website is a blogging application and you can create posts on the website and publish them.
 
